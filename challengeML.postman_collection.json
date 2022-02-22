@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "7beae430-1049-4780-a746-039c171ca37e",
+		"name": "challengeML",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "topsecret",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"satellites\": [\n        {\n            \"name\": \"kenobi\",\n            \"distance\": 100.0,\n            \"message\": [\"este\", \"\", \"\",\"mensaje\",\"\"]\n        },\n        {\n            \"name\": \"skywalker\",\n            \"distance\": 115.5,\n            \"message\": [\"\", \"es\", \"\", \"\", \"secreto\"]\n        },\n        {\n            \"name\": \"sato\",\n            \"distance\": 142.7,\n            \"message\": [\"este\", \"\", \"un\", \"\", \"\"]\n        }\n        \n    ]\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/topsecret/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret-aws",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"satellites\": [\n        {\n            \"name\": \"kenobi\",\n            \"distance\": 100.0,\n            \"message\": [\"este\", \"\", \"\",\"mensaje\",\"\"]\n        },\n        {\n            \"name\": \"skywalker\",\n            \"distance\": 115.5,\n            \"message\": [\"\", \"es\", \"\", \"\", \"secreto\"]\n        },\n        {\n            \"name\": \"sato\",\n            \"distance\": 142.7,\n            \"message\": [\"este\", \"\", \"un\", \"\", \"\"]\n        }\n        \n    ]\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/topsecret/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/topsecret_split/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret_split",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split-aws",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://rebelallianceaws-env.eba-g3dftm3m.us-east-1.elasticbeanstalk.com/topsecret_split/",
+					"protocol": "http",
+					"host": [
+						"rebelallianceaws-env",
+						"eba-g3dftm3m",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"topsecret_split",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"distance\": 100.0,\n    \"message\": [\"este\", \"\", \"\",\"mensaje\",\"\"]\n}\n\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/topsecret_split/kenobi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret_split",
+						"kenobi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split-aws",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"sato",
+							"skywalker",
+							"kenobi"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"distance\": 100.0,\n    \"message\": [\"este\", \"\", \"\",\"mensaje\",\"\"]\n}\n\n"
+				},
+				"url": {
+					"raw": "http://rebelallianceaws-env.eba-g3dftm3m.us-east-1.elasticbeanstalk.com/topsecret_split/kenobi",
+					"protocol": "http",
+					"host": [
+						"rebelallianceaws-env",
+						"eba-g3dftm3m",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"topsecret_split",
+						"kenobi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
