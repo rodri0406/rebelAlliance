@@ -45,10 +45,12 @@ func GetMessage(messages ...[]string) (msg string)
 Duda:
 En el siguiente punto no me quedo claro el desfasaje si era el largo de los 3 arrays podria variar o 
 podria haber string vacios en lugares que no correspondiera.
+Se opto por considerar correcto que varie el largo de los arrays para llegar a generar el msj final
 
 ● Considerar que existe un desfasaje (a determinar) en el mensaje que se recibe en cada satélite.
-    ○ Ejemplo:
-        ■ Kenobi: [“”, “este”, “es”, “un”, “mensaje”] 
-        ■ Skywalker: [“este”, “”, “un”, “mensaje”]
-        ■ Sato: [“”, ””, ”es”, ””, ”mensaje”]
+  
+  ○ Ejemplo:
+    ■ Kenobi: [“”, “este”, “es”, “un”, “mensaje”] 
+    ■ Skywalker: [“este”, “”, “un”, “mensaje”]
+    ■ Sato: [“”, ””, ”es”, ””, ”mensaje”]
 
