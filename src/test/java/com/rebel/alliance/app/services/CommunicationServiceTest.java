@@ -32,7 +32,7 @@ public class CommunicationServiceTest {
 		
 		Coordinate coordinate = new Coordinate(-58.315252587138595, -69.55141837312165);
 		
-		SatelliteDataResponse response = communicationService.processSatelliteData(satelliteDataList);
+		SatelliteDataResponse response = communicationService.interpretSecretMessage(satelliteDataList);
 		
 		assertNotNull(response);
 		assertTrue(response.getPosition().equals(coordinate));

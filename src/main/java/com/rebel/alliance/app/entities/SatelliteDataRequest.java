@@ -1,18 +1,24 @@
 package com.rebel.alliance.app.entities;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class SatelliteDataRequest {
+public class SatelliteDataRequest implements Serializable{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	
 	private String name;
 	private double distance;
-	private List<String> messageList;
+	private List<String> message;
 	
 	
-	public SatelliteDataRequest(String name, double distance, List<String> messageList) {
+	public SatelliteDataRequest(String name, double distance, List<String> message) {
 		this.name = name;
 		this.distance = distance;
-		this.messageList = messageList;
+		this.message = message;
 	}
 
 	public SatelliteDataRequest() {
@@ -30,13 +36,10 @@ public class SatelliteDataRequest {
 	public void setDistance(double distance) {
 		this.distance = distance;
 	}
-	public List<String> getMessageList() {
-		return messageList;
+	public List<String> getMessage() {
+		return message;
 	}
-	public void setMessageList(List<String> messageList) {
-		this.messageList = messageList;
+	public void setMessage(List<String> message) {
+		this.message = message;
 	}
-	
-	
-
 }

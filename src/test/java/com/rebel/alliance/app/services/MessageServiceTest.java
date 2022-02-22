@@ -27,7 +27,7 @@ public class MessageServiceTest {
 		satelliteDataList.add(new SatelliteDataRequest("skywalker", 115.5,Arrays.asList("", "es", "", "", "secreto")));
 		satelliteDataList.add(new SatelliteDataRequest("sato", 142.7, Arrays.asList("este", "", "un", "", "")));
 		
-		List<List<String>> messageList = satelliteDataList.stream().map(s -> s.getMessageList()).collect(Collectors.toList());
+		List<List<String>> messageList = satelliteDataList.stream().map(s -> s.getMessage()).collect(Collectors.toList());
 		
 		List<String> messageAll = messageService.getAllMessages(messageList);
 		
@@ -46,7 +46,7 @@ public class MessageServiceTest {
 		satelliteDataList.add(new SatelliteDataRequest("skywalker", 115.5,Arrays.asList("", "es", "", "", "secreto")));
 		satelliteDataList.add(new SatelliteDataRequest("sato", 142.7, Arrays.asList("","este", "", "un", "", "")));
 		
-		List<List<String>> messageList = satelliteDataList.stream().map(s -> s.getMessageList()).collect(Collectors.toList());
+		List<List<String>> messageList = satelliteDataList.stream().map(s -> s.getMessage()).collect(Collectors.toList());
 			
 		int maxindex = messageService.getMaxIndex(messageList);
 		
@@ -64,7 +64,7 @@ public class MessageServiceTest {
 		satelliteDataList.add(new SatelliteDataRequest("skywalker", 115.5,Arrays.asList("", "es", "", "", "secreto")));
 		satelliteDataList.add(new SatelliteDataRequest("sato", 142.7, Arrays.asList("","este", "", "un", "", "")));
 		
-		List<List<String>> messageList = satelliteDataList.stream().map(s -> s.getMessageList()).collect(Collectors.toList());
+		List<List<String>> messageList = satelliteDataList.stream().map(s -> s.getMessage()).collect(Collectors.toList());
 		
 		List<String> messageAll = messageService.getAllMessages(messageList);
 		
